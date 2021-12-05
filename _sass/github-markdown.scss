@@ -40,7 +40,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 .markdown-body h4 .octicon-link,
 .markdown-body h5 .octicon-link,
 .markdown-body h6 .octicon-link {
-  color: rgba(#000000, 1);  // Differs from default GitHub markdown styling
+  color: rgba($primary-text-color, 1);  // Differs from default GitHub markdown styling
   vertical-align: middle;
   visibility: hidden;
 }
@@ -52,7 +52,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  color: rgba(#000000, 1);
+  color: rgba($primary-text-color, 1);
 }
 
 .markdown-body h1:hover .anchor,
@@ -76,7 +76,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: rgba(#000000, 0.8);  // Differs from default GitHub markdown styling
+  color: rgba($primary-text-color, 0.8);  // Differs from default GitHub markdown styling
   line-height: 1.5;
   font-family: $font; // Use sitewide font stack instead of hardcoded font-stack
   font-size: 16px;
@@ -292,7 +292,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 .markdown-body hr {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #dfe2e5;
+  border-bottom: 1px solid $secondary-color;
   height: 0;
   margin: 15px 0;
   overflow: hidden;
@@ -423,7 +423,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body .border {
-  border: 1px solid #e1e4e8!important;
+  border: 1px solid $secondary-color !important;
 }
 
 .markdown-body .border-0 {
@@ -431,7 +431,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body .border-bottom {
-  border-bottom: 1px solid #e1e4e8!important;
+  border-bottom: 1px solid $secondary-color !important;
 }
 
 .markdown-body .rounded-1 {
@@ -550,7 +550,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body hr {
-  background-color: #e1e4e8;
+  background-color: #303030;
   border: 0;
   height: .25em;
   margin: 24px 0;
@@ -603,7 +603,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 
 .markdown-body h1,
 .markdown-body h2 {
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid $secondary-color;
   padding-bottom: .3em;
 }
 
@@ -682,21 +682,21 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 
 .markdown-body table td,
 .markdown-body table th {
-  border: 1px solid #dfe2e5;
+  border: 1px solid $secondary-color;
   padding: 6px 13px;
 }
 
 .markdown-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #c6cbd1;
+  background-color: $body-color;
+  border-top: 1px solid $secondary-color;
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: $secondary-color;
 }
 
 .markdown-body img {
-  background-color: #fff;
+  background-color: $body-color;
   box-sizing: content-box;
   max-width: 100%;
 }
